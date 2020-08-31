@@ -5,7 +5,12 @@
             {
                 "appID": "NZ8S73X438.com.technorely.careclix.patient.stage",
                 "paths": ["*"]
+            }, 
+            {
+                "appID": "NZ8S73X438.com.technorely.careclix.patient.dev",
+                "paths": ["*"]
             }
         ]
     }
 }
+
