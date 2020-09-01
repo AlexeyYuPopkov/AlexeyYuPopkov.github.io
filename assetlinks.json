@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.careclix.patient.dev",
+    "sha256_cert_fingerprints":
+    ["14:7B:27:5B:16:B2:63:9C:4C:EF:90:AE:8A:BB:DB:98:E9:24:CA:8E:58:A1:85:54:84:93:68:BB:60:9B:35:93"]
+  }
+}]
