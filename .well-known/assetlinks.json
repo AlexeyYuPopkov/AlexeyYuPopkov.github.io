@@ -2,8 +2,8 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "com.careclix.patient.dev",
+    "package_name": "com.example.e_wine",
     "sha256_cert_fingerprints":
-    ["14:7B:27:5B:16:B2:63:9C:4C:EF:90:AE:8A:BB:DB:98:E9:24:CA:8E:58:A1:85:54:84:93:68:BB:60:9B:35:93"]
+    ["53:53:61:90:2F:EA:86:70:1D:9E:01:43:B0:B8:92:67:5E:76:C3:CE:A8:36:DB:09:1A:E5:ED:8E:C2:BF:BC:11"]
   }
 }]
