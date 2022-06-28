@@ -4,6 +4,22 @@
     "namespace": "android_app",
     "package_name": "com.example.e_wine",
     "sha256_cert_fingerprints":
-    ["53:53:61:90:2F:EA:86:70:1D:9E:01:43:B0:B8:92:67:5E:76:C3:CE:A8:36:DB:09:1A:E5:ED:8E:C2:BF:BC:11"]
+    ["2A:85:E6:FC:83:87:9D:08:C1:53:2A:6F:8C:D3:8E:5F:38:B6:D2:36:45:C7:E0:99:B5:25:DD:B9:DA:25:76:A0"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://alexeyyupopkov.github.io"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.e_wine",
+    "sha256_cert_fingerprints":
+    ["2A:85:E6:FC:83:87:9D:08:C1:53:2A:6F:8C:D3:8E:5F:38:B6:D2:36:45:C7:E0:99:B5:25:DD:B9:DA:25:76:A0"]
   }
 }]
