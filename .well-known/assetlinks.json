@@ -2,8 +2,8 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "com.example.e_wine",
+    "package_name": "ewine.s_t.st",
     "sha256_cert_fingerprints":
-    ["68:CC:A0:E0:E7:C6:40:70:95:E4:5C:A1:D4:50:67:2D:06:3E:C9:75:5C:42:F8:3A:69:97:25:F2:EA:06:66:E7"]
+    ["BE:06:B8:0E:EF:91:1E:A7:46:11:16:51:57:58:38:43:07:A7:A0:AC:5D:93:A3:A2:BB:36:8E:F2:05:52:0C:73"]
   }
 }]
