@@ -2,8 +2,8 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "ewine.s_t.st",
+    "package_name": "by.st.kgz.legal",
     "sha256_cert_fingerprints":
-    ["BE:06:B8:0E:EF:91:1E:A7:46:11:16:51:57:58:38:43:07:A7:A0:AC:5D:93:A3:A2:BB:36:8E:F2:05:52:0C:73"]
+    ["F8:0F:61:A0:01:22:38:EF:28:BE:BB:8D:A0:3D:92:A0:CB:C4:E4:BA:2C:F3:8F:D6:06:D4:82:1B:EC:EC:4A:C0"]
   }
 }]
