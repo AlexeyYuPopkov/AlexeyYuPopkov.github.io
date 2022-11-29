@@ -1,12 +1,11 @@
-{
-    "applinks": {
+{ 
+    "applinks": { 
         "apps": [],
-        "details": [{
-            "appID": "F3Q99L74MW.by.st.kgzBankApp",
-            "paths": ["*"]
-        },{
-              "appID": "9Q62AEKC8N.com.sybase365.cbk",
-              "paths": ["*"]
-        }]
+        "details": [
+            { 
+                "appID": "F3Q99L74MW.by.st.kgz.legal",
+                "paths": [ "*" ]
+            }
+        ]
     }
 }
