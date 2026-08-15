@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Privacy Policy · Private Notes (Nostr)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f9fc;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            padding: 24px 16px;
+            line-height: 1.6;
+            color: #1e293b;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+            padding: 32px 28px;
+            transition: padding 0.2s;
+        }
+
+        .header {
+            border-bottom: 2px solid #eef2f6;
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(145deg, #0f172a, #334155);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 6px;
+        }
+
+        .header .sub {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 0.95rem;
+            color: #475569;
+            margin-top: 6px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e6f0ff;
+            color: #1e4f8a;
+            font-weight: 600;
+            font-size: 0.7rem;
+            padding: 4px 14px;
+            border-radius: 40px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: #0f172a;
+            letter-spacing: -0.01em;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.4rem 0;
+            color: #1e293b;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .highlight-box {
+            background: #f1f5f9;
+            padding: 18px 22px;
+            border-radius: 20px;
+            margin: 1.5rem 0;
+            border-left: 6px solid #2563eb;
+        }
+
+        .highlight-box strong {
+            color: #0b2b5c;
+        }
+
+        ul, ol {
+            padding-left: 1.6rem;
+            margin: 0.8rem 0 1.4rem 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .list-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.3rem 0;
+            background: #f8fafc;
+            padding: 16px 20px;
+            border-radius: 18px;
+            margin: 1rem 0 1.5rem 0;
+        }
+
+        .list-grid li {
+            list-style: none;
+            padding-left: 28px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%232563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>') left center no-repeat;
+            background-size: 18px;
+            margin-bottom: 0.4rem;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px dashed #dce2eb;
+            margin: 2rem 0;
+        }
+
+        .contact-block {
+            background: #eef4ff;
+            border-radius: 40px;
+            padding: 18px 24px;
+            display: inline-flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px 20px;
+            margin-top: 0.5rem;
+            width: 100%;
+        }
+
+        .contact-block a {
+            color: #1e4f8a;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px dotted #8aa9d9;
+        }
+
+        .contact-block a:hover {
+            border-bottom: 2px solid #1e4f8a;
+        }
+
+        .footnote {
+            font-size: 0.9rem;
+            color: #475569;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 2.5rem;
+            padding-top: 1.8rem;
+            text-align: center;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                padding: 12px 10px;
+            }
+            .container {
+                padding: 22px 16px;
+            }
+            .header h1 {
+                font-size: 1.7rem;
+            }
+            .badge {
+                font-size: 0.65rem;
+                padding: 3px 12px;
+                margin-top: 4px;
+            }
+            .sub {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+            .contact-block {
+                flex-direction: column;
+                align-items: flex-start;
+                border-radius: 24px;
+            }
+            .list-grid {
+                padding: 12px 16px;
+            }
+        }
+
+        @media (min-width: 700px) {
+            .list-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .zk-badge {
+            background: #0b2b5c;
+            color: white;
+            border-radius: 60px;
+            padding: 4px 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            text-transform: uppercase;
+            margin-right: 6px;
+        }
+
+        .inline-code {
+            background: #e9edf3;
+            padding: 0.1rem 0.5rem;
+            border-radius: 14px;
+            font-family: 'SF Mono', 'Menlo', monospace;
+            font-size: 0.85em;
+            color: #1e3a6b;
+        }
+
+        .relay-note {
+            background: #fafcff;
+            border-radius: 18px;
+            padding: 16px 20px;
+            border: 1px solid #dde5ef;
+            margin: 1.2rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+        <h1>Private Notes (Nostr)</h1>
+        <div class="sub">
+            <span><span class="badge">Privacy Policy</span></span>
+            <span style="font-weight: 500;">Effective Date: March 16, 2026</span>
+        </div>
+    </div>
+
+    <!-- Introduction -->
+    <p><strong>Introduction.</strong> This privacy policy applies to the <strong>Private Notes (Nostr)</strong> application (hereinafter referred to as the "Application") for mobile devices, created by <strong>Alekseii Popkov</strong> (hereinafter referred to as the "Service Provider"). The Application is provided as a free service and is intended for use "AS IS".</p>
+
+    <!-- Zero-knowledge block -->
+    <div class="highlight-box">
+        <span class="zk-badge">🔐 zero-knowledge</span>
+        <strong>The Service Provider does not collect, store, or share any personal data from users of the Application.</strong>
+        <ul style="margin-top: 12px; list-style: none; padding-left: 0;">
+            <li style="padding-left: 28px; background: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2218%22 height=%2218%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%232563eb%22 stroke-width=%222.5%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><path d=%22M20 6L9 17l-5-5%22/></svg>') left center no-repeat; background-size: 18px;">All notes are encrypted on your device <strong>before</strong> being transmitted</li>
+            <li style="padding-left: 28px; background: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2218%22 height=%2218%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%232563eb%22 stroke-width=%222.5%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><path d=%22M20 6L9 17l-5-5%22/></svg>') left center no-repeat; background-size: 18px;">The Service Provider does not operate servers that store your data</li>
+            <li style="padding-left: 28px; background: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2218%22 height=%2218%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%232563eb%22 stroke-width=%222.5%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><path d=%22M20 6L9 17l-5-5%22/></svg>') left center no-repeat; background-size: 18px;">The Service Provider cannot access your notes, private keys (nsec), or PIN</li>
+        </ul>
+    </div>
+
+    <!-- How the Application works with Nostr -->
+    <h2>How the Application Works with the Nostr Protocol</h2>
+    <p><strong>Private Notes (Nostr)</strong> uses the Nostr protocol — a decentralized network of independent servers called "relays." Your private key (nsec) is generated on your device and stored exclusively in secure hardware-backed storage (<span class="inline-code">Keychain</span> on iOS, <span class="inline-code">Keystore</span> on Android). It never leaves your device and is never sent to the Service Provider or any third party.</p>
+    <p>Your notes are encrypted locally and then published to Nostr relays that you select in the Application settings.</p>
+    <div class="relay-note">
+        <strong>📡 Relay operators</strong> may temporarily store your encrypted notes, but they cannot read them — only you can decrypt them with your nsec and optional PIN.
+    </div>
+    <p><strong>Optional PIN:</strong> If you choose to set a PIN for additional security, it is never stored on disk and exists only in memory while the Application is open.</p>
+
+    <!-- What Information Is Visible -->
+    <h2>What Information Is Visible</h2>
+    <p>Your public key (npub) is visible to relays and other Nostr users when you publish notes. This is a public identifier, similar to a username. The Service Provider <strong>does not</strong> collect your npub, IP address, device information, or usage statistics.</p>
+
+    <!-- Third-Party Access -->
+    <h2>Third-Party Access</h2>
+    <p>The Application does not integrate any third-party analytics, crash reporting, advertising SDKs, or tracking tools. The Service Provider does not share any user data with third parties because no user data is collected.</p>
+    <p>Nostr relays (which you choose independently) may process your encrypted data according to their own policies. The Service Provider is not responsible for the privacy practices of these relays.</p>
+
+    <!-- Opt-Out Rights -->
+    <h2>Opt-Out Rights</h2>
+    <p>You can stop all use of the Application simply by uninstalling it. Use the standard uninstall process available on your mobile device or via the app marketplace.</p>
+
+    <!-- Data Retention and Deletion -->
+    <h2>Data Retention and Deletion</h2>
+    <p>Your notes and nsec remain solely on your device and the relays you selected.</p>
+    <p><strong>To permanently delete your data:</strong> uninstall the Application and, if desired, send deletion requests to your chosen relays.</p>
+    <p>The Service Provider <strong>cannot</strong> delete your data because the Service Provider does not possess it.</p>
+
+    <!-- Children's Privacy -->
+    <h2>Children's Privacy</h2>
+    <p>The Application is not directed at children under the age of 13. The Service Provider does not knowingly collect any information from children. If you believe a child has provided personally identifiable information, contact the Service Provider at <a href="mailto:alexey.yu.popkov@gmail.com">alexey.yu.popkov@gmail.com</a> — although please note that the Service Provider does not collect such information.</p>
+
+    <!-- Security -->
+    <h2>Security</h2>
+    <p>The Service Provider is committed to protecting your privacy through transparency and minimal data handling. Your data's security relies on:</p>
+    <ul class="list-grid">
+        <li>On-device encryption using modern standards (NIP-44)</li>
+        <li>Hardware-backed secure storage for private keys</li>
+        <li>User control over relay selection</li>
+    </ul>
+    <p>However, you are <strong>solely</strong> responsible for backing up your nsec. If lost, your notes cannot be recovered by anyone, including the Service Provider.</p>
+
+    <!-- Changes -->
+    <h2>Changes to This Privacy Policy</h2>
+    <p>This Privacy Policy may be updated from time to time. The Service Provider will notify you of any changes by updating this page with the new policy. Continued use of the Application is deemed approval of the updated policy.</p>
+
+    <!-- Consent -->
+    <h2>Your Consent</h2>
+    <p>By using the Application, you consent to the processing of your information as described in this Privacy Policy. Since the Service Provider does not collect data, this primarily means you consent to the local encryption and relay-based distribution of your notes.</p>
+
+    <hr>
+
+    <!-- Contact -->
+    <h2 style="margin-top: 0.5rem;">Contact Us</h2>
+    <p>If you have any questions regarding privacy while using the Application, please contact the Service Provider at:</p>
+    <div class="contact-block">
+        <span style="font-weight: 500;">📧</span>
+        <a href="mailto:alexey.yu.popkov@gmail.com">alexey.yu.popkov@gmail.com</a>
+        <span style="color: #2c3e50; opacity: 0.7;">|</span>
+        <span style="color: #1e293b;">Alekseii Popkov</span>
+    </div>
+
+    <div class="footnote">
+        Private Notes (Nostr) · Policy version March 16, 2026
+    </div>
+
+</div>
+</body>
+</html>
